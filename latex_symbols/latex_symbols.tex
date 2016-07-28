@@ -1,0 +1,141 @@
+% !Mode:: "TeX:UTF-8"
+\documentclass{ctexart}
+\usepackage[top=2.5cm,bottom=2.5cm,left=3.0cm,right=3.0cm]{geometry}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+\newcommand{\pair}[2]{${#1} \hspace{0.3cm} \backslash ${#2}}
+\newcommand{\nbpair}[2]{${#1} \hspace{0.3cm} ${#2}} % pair without backslash
+
+\begin{document}
+\title{LATEX 中的数学符号}
+\author{kedixa}
+\maketitle
+\section{字母}
+\subsection{希腊字母}
+\sihao
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+    \pair{\alpha}{alpha} & \pair{\beta}{beta} & \pair{\gamma}{gamma} & \pair{\delta}{delta} \\
+    \pair{\epsilon}{epsilon} & \pair{\zeta}{zeta} & \pair{\eta}{eta} & \pair{\theta}{theta} \\
+    \pair{\iota}{iota} & \pair{\kappa}{kappa} & \pair{\lambda}{lambda} & \pair{\mu}{mu} \\
+    \pair{\nu}{nu} & \pair{\xi}{xi} & \nbpair{o}{o} & \pair{\pi}{pi} \\
+    \pair{\pi}{pi} & \pair{\rho}{rho} & \pair{\sigma}{sigma} & \pair{\tau}{tau} \\
+    \pair{\upsilon}{upsilon} & \pair{\phi}{phi} & \pair{\chi}{chi} & \pair{\psi}{psi} \\
+    \pair{\omega}{omega} & & &\\
+\end{tabular}
+
+\vspace{0.5cm}
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+    \pair{\Gamma}{Gamma} & \pair{\Delta}{Delta} & \pair{\Theta}{Theta} & \pair{\Lambda}{Lambda} \\
+    \pair{\Xi}{Xi} & \pair{\Pi}{Pi} & \pair{\Sigma}{Sigma} & \pair{\Upsilon}{Upsilon} \\
+    \pair{\Phi}{Phi} & \pair{\Psi}{Psi} & \pair{\Omega}{Omega} &\\
+\end{tabular}
+
+\subsection{字母类符号}
+\sihao
+\begin{tabular}{p{3.5cm}p{3.5cm}p{3.5cm}p{3.5cm}}
+    \nbpair{a'}{a'} & \nbpair{a''}{a''} & \nbpair{a'''}{a'''} & \nbpair{a''''}{a''''} \\
+    \pair{\hat{a}}{hat\{a\}} & \pair{\check{a}}{check\{a\}} & \pair{\tilde{a}}{tilde\{a\}} & \pair{\acute{a}}{acute\{a\}} \\
+    \pair{\grave{a}}{grave\{a\}} & \pair{\dot{a}}{dot\{a\}} & \pair{\ddot{a}}{ddot\{a\}} & \pair{\mathring{a}}{mathring\{a\}} \\
+    \pair{\bar{a}}{bar\{a\}} & \pair{\vec{a}}{vec\{a\}} & \pair{\breve{a}}{breve\{a\}} & \pair{\not{a}}{not\{a\}} \\
+    \pair{\widehat{A}}{widehat\{A\}} &  & \pair{\widetilde{A}}{widetilde\{A\}} & \\
+    \pair{\overleftarrow{ab}}{overleftarrow\{ab\}} & & \pair{\overrightarrow{cd}}{overrightarrow\{cd\}} & \\
+    \pair{\overline{ab}}{overline\{ab\}} & & \pair{\underline{cd}}{underline\{cd\}} & \\
+\end{tabular}
+
+\section{运算符}
+\subsection{二元运算符}
+
+\begin{tabular}{p{4.4cm}p{4.4cm}p{4.4cm}}
+    \nbpair{+}{+} & \nbpair{-}{-} & \pair{\div}{div} \\
+    \pair{\cdot}{cdot} & \pair{\times}{times} & \pair{\star}{star} \\
+    \pair{\pm}{pm} & \pair{\mp}{mp} & \pair{\ast}{ast} \\
+    \pair{\setminus}{setminus} & \pair{\triangleleft}{triangleleft} & \pair{\triangleright}{triangleright} \\
+    \pair{\cup}{cup} & \pair{\cap}{cap} & \pair{\circ}{circ} \\
+    \pair{\sqcup}{sqcup} & \pair{\sqcap}{sqcap} & \pair{\bullet}{bullet} \\
+    \pair{\vee}{vee} & \pair{\wedge}{wedge} & \pair{\diamond}{diamond} \\
+    \pair{\oplus}{oplus} & \pair{\ominus}{ominus} & \pair{\odot}{odot} \\
+    \pair{\oslash}{oslash} & \pair{\otimes}{otimes} & \pair{\bigcirc}{bigcirc} \\
+    \pair{\uplus}{uplus} & \pair{\bigtriangleup}{bigtriangleup} & \pair{\bigtriangledown}{bigtriangledown} \\
+    \pair{\amalg}{amalg} & \pair{\dagger}{dagger} & \pair{\ddagger}{ddagger} \\
+    \pair{\wr}{wr} &  & \\
+\end{tabular}
+
+\subsection{关系运算符}
+\begin{tabular}{p{4.4cm}p{4.4cm}p{4.4cm}}
+    \nbpair{<}{<} & \nbpair{>}{>} & \nbpair{=}{=} \\
+    \pair{\le}{le(leq)} & \pair{\ge}{ge(geq)} & \pair{\equiv}{equiv} \\
+    \pair{\ll}{ll} & \pair{\gg}{gg} & \pair{\doteq}{doteq} \\
+    \pair{\prec}{prec} & \pair{\succ}{succ} & \pair{\sim}{sim} \\
+    \pair{\preceq}{preceq} & \pair{\succeq}{succeq} & \pair{\simeq}{simeq} \\
+    \pair{\subset}{subset} & \pair{\supset}{subset} & \pair{\approx}{approx} \\
+    \pair{\subseteq}{subseteq} & \pair{\supseteq}{subseteq} & \pair{\cong}{cong} \\
+    \pair{\sqsubseteq}{sqsubseteq} & \pair{\sqsupseteq}{sqsupseteq} & \pair{\bowtie}{bowtie} \\
+    \pair{\in}{in} & \pair{\ni}{ni(owns)} & \pair{\propto}{propto} \\
+    \pair{\vdash}{vdash} & \pair{\dashv}{dashv} & \pair{\models}{models} \\
+    \pair{\mid}{mid} & \pair{\parallel}{parallel} & \pair{\perp}{perp} \\
+    \pair{\smile}{smile} & \pair{\frown}{frown} & \pair{\asymp}{asymp} \\
+    \nbpair{:}{:} & \pair{\notin}{notin} & \pair{\neq}{neq(ne)}\\
+\end{tabular}
+
+\subsection{大尺寸运算符}
+
+\begin{tabular}{p{4.4cm}p{4.4cm}p{4.4cm}}
+    \pair{\sum}{sum} & \pair{\prod}{prod} & \pair{\coprod}{coprod} \\
+    \pair{\bigcup}{bigcup} & \pair{\bigcap}{bigcap} & \pair{\bigsqcup}{bigsqcup} \\
+    \pair{\bigoplus}{bigoplus} & \pair{\bigotimes}{bigotimes} & \pair{\bigodot}{bigodot} \\
+    \pair{\bigvee}{bigvee} & \pair{\bigwedge}{bigwedge} & \pair{\biguplus}{biguplus} \\
+    \pair{\int}{int} &\pair{\oint}{oint} & \\
+\end{tabular}
+
+\subsection{其他运算符}
+
+\begin{tabular}{p{4.4cm}p{4.4cm}p{4.4cm}}
+    \pair{\forall}{forall} & \pair{\exists}{exists} & \pair{\emptyset}{emptyset}\\
+    \pair{\nabla}{nabla} & \pair{\partial}{partial} & \pair{\mathrm{d}x}{mathrm\{d\}x}\\
+    \pair{\lnot}{lnot} & \pair{\neg}{neg} & \\
+\end{tabular}
+
+\section{箭头}
+
+\begin{tabular}{p{4.8cm}p{4.8cm}p{4.8cm}}
+    \pair{\gets}{leftarrow(gets)} & \pair{\longleftarrow}{longleftarrow} & \pair{\uparrow}{uparrow} \\
+    \pair{\to}{rightarrow(to)} & \pair{\longrightarrow}{longrightarrow} & \pair{\downarrow}{downarrow} \\
+    \pair{\leftrightarrow}{leftrightarrow} & \pair{\longleftrightarrow}{longleftrightarrow} & \pair{\updownarrow}{updownarrow}\\
+    \pair{\Leftarrow}{Leftarrow} & \pair{\Longleftarrow}{Longleftarrow} & \pair{\Uparrow}{Uparrow} \\
+    \pair{\Rightarrow}{Rightarrow} & \pair{\Longrightarrow}{Longrightarrow} & \pair{\Downarrow}{Downarrow} \\
+    \pair{\Leftrightarrow}{Leftrightarrow} & \pair{\Longleftrightarrow}{Longleftrightarrow} & \pair{\Updownarrow}{Updownarrow}\\
+    \pair{\mapsto}{mapsto} & \pair{\longmapsto}{longmapsto} & \pair{\nearrow}{nearrow} \\
+    \pair{\hookleftarrow}{hookleftarrow} & \pair{\hookrightarrow}{hookrightarrow} & \pair{\searrow}{searrow} \\
+    \pair{\leftharpoonup}{leftharpoonup} & \pair{\rightharpoonup}{rightharpoonup} & \pair{\swarrow}{swarrow} \\
+    \pair{\leftharpoondown}{leftharpoondown} & \pair{\rightharpoondown}{rightharpoondown} & \pair{\nwarrow}{nwarrow} \\
+    \pair{\rightleftharpoons}{rightleftarpoons} & \pair{\iff}{iff} & \\
+\end{tabular}
+
+\section{括号}
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+    \nbpair{(}{(} & \nbpair{)}{)} & \nbpair{[}{[} & \nbpair{]}{]} \\
+    \pair{\{}{\{} & \pair{\}}{\}} & \pair{\langle}{langle} & \pair{\rangle}{rangle} \\
+    \pair{\lfloor}{lfloor} & \pair{\rfloor}{rfloor} & \pair{\lceil}{lceil} & \pair{\rceil}{rceil} \\
+    \nbpair{/}{/} & \pair{\backslash}{backslash} & \pair{\vert}{vert} & \pair{\Vert}{Vert} \\
+\end{tabular}
+\newline
+\begin{tabular}{p{4.8cm}p{4.8cm}p{4.8cm}}
+    \pair{\lgroup}{lgroup} & \pair{\rgroup}{rgroup} & \pair{\arrowvert}{arrowvert} \\
+    \pair{\lmoustache}{lmoustache} & \pair{\rmoustache}{rmoustache} & \pair{\Arrowvert}{Arrowvert} \\
+    \pair{\bracevert}{bracevert} & & \\
+\end{tabular}
+
+\section{其他符号}
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+    \pair{\dots}{dots} & \pair{\cdots}{cdots} & \pair{\vdots}{vdots} & \pair{\ddots}{ddots} \\
+    \pair{\hbar}{hbar} & \pair{\imath}{imath} & \pair{\jmath}{jmath} & \pair{\ell}{ell} \\
+    \pair{\Re}{Re} & \pair{\Im}{Im} & \pair{\aleph}{aleph} & \pair{\wp}{wp} \\
+    \pair{\nabla}{nabla} & \pair{\triangle}{triangle} & \pair{\prime}{prime} & \pair{\infty}{infty} \\
+    \pair{\bot}{bot} & \pair{\top}{top} & \pair{\angle}{angle} & \pair{\surd}{surd} \\
+    \pair{\diamondsuit}{diamondsuit} & \pair{\heartsuit}{heartsuit} & \pair{\clubsuit}{clubsuit} & \pair{\spadesuit}{spadesuit} \\
+    \pair{\flat}{flat} & \pair{\natural}{natural} & \pair{\sharp}{sharp} & \pair{\copyright}{copyright} \\
+    \pair{\dag}{dag} & \pair{\ddag}{ddag} & \pair{\S}{S} & \pair{\P}{P} \\
+    \pair{\pounds}{pounds}  &  \pair{\%}{\%} & \pair{\angle}{angle} & \\
+\end{tabular}
+
+\end{document}
